@@ -1,1 +1,73 @@
+h1 {
+    background: crimson;
+    padding: 40;
+    text-align: center;
+    color: aliceblue;
+}
 
+p{
+    font-size: 30;
+    font-weight: bold;
+}
+
+.flex{
+    display: flex;
+}
+
+aside{
+    width: 40%;
+    margin-right: 40px;
+}
+
+section{
+    width: 70%;
+}
+
+#search{
+    background-color: crimson;
+    padding: 5px;
+}
+
+.column{
+    display:flex;
+    flex-direction: column;
+    border-top: 3px darkblue;
+    padding-top: 7px;
+    margin-top: 7px;
+}
+
+.column button {
+    background-color: azure;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.location {
+    border: 1px solid blue;
+    padding: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    padding: 10px;
+    background-color:crimson;
+    color:aliceblue;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.currentUV span {
+    padding: 10px 20px;
+    border: radius 8px;
+}
+
+.img {
+    width: 20px;
+    height: 20px;
+    padding: 35px;
+}
