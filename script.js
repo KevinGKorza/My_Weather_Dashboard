@@ -19,8 +19,8 @@ var yourCurrentWeather = data;
 $(".currentImg").css("backgroundimage", "url(https://api.openweathermap.org/data/2.5/weather?q=" + yourCurrentWeather.weather[0].icon + "@2x.png)");
 $("#userCityName").html(yourCurrentWeather.name + " " + currentDate)
 $(".currentTemperature").append(yourCurrentWeather.main.temp)
-$("currentWindmph").append(yourCurrentWeather.wind.speed)
-$("currentHummidityIndex").append(yourCurrentWeather.main.humidity)
+$(".currentWindmph").append(yourCurrentWeather.wind.speed)
+$(".currentHumidityIndex").append(yourCurrentWeather.main.humidity)
 console.log(yourCurrentWeather)
 console.log(yourCurrentWeather.coord)
 var coordLon = yourCurrentWeather.coord.lon;
@@ -34,13 +34,13 @@ return weatherResponse.json();
 })
 .then(function (weatherData) {
 var currentUV = weatherData.current.uvi;
-$(".currentUV span").append(weatherData.current.uvi)
+$(".currentUVIndex").append(weatherData.current.uvi)
 if(currentUV < 2) {
-$(".currentUV span").css("backgroundcolor", "green");
+$(".currentUVIndex").css("backgroundcolor", "green");
 } else if ( currentUV < 6) {
-$(".currentUV span").css("backgroundcolor", "yellow");
+$(".currentUVIndex").css("backgroundcolor", "yellow");
 } else {
-$(".currentUV span").css("backgroundcolor", "orange");
+$(".currentUVIndex").css("backgroundcolor", "orange");
 }
         
 
