@@ -1,13 +1,16 @@
-h1 {
+header {
     background: crimson;
     padding: 40;
     text-align: center;
-    color: aliceblue;
+    color: white;
+    font-size: large;
+    font-style: italic;
 }
 
-p{
+.paragraph{
     font-size: 30;
     font-weight: bold;
+    font-style: italic;
 }
 
 .flex{
@@ -54,20 +57,45 @@ section{
 }
 
 .card {
-    padding: 10px;
-    background-color:crimson;
-    color:aliceblue;
+    background-color: crimson;
     width: 100%;
-    margin-right: 20px;
+    color: white;
+    margin-right: 30px;
+    padding: 20px;
 }
 
-.currentUV span {
+
+
+.currentUV {
     padding: 10px 20px;
-    border: radius 8px;
+    border: 8px;
 }
 
-.img {
-    width: 20px;
-    height: 20px;
-    padding: 35px;
+.imgage {
+   border-radius: 30;
+   width: 20px;
+   padding: 35px;
+   height: 20px;
+}
+
+
+
+.green{
+    background-color: lightgreen;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.orange{
+    background-color: orange;
+}
+
+
+.backgroundimage {
+   border-radius: 30;
+   width: 20px;
+   padding: 35px;
+   height: 20px;
 }
