@@ -1,10 +1,13 @@
 //Makes it so the current date displays for the user when they click their destination
 var currentDate = moment().format('dddd, MMMM Do YYYY');
 $("#search").click(function() {
-console.log("clicked")
+console.log("More Information Below for Your Destination")
 var userSearchInput =$("#usersearchinput").val()
 console.log(userSearchInput)
 $("#usersearchhistory").append('<button type="button">' + userSearchInput + '</button>');
+//Local Storage (shows the user their search history)
+localStorage.setItem("usersearchhistory", userSearchInput);
+$("usersearchhistory").append('<button type="button">' + localStorage.getItem("usersearchhistory") + '</button>');
 function getApi() {
 //The API url along with my generated key from openweathermap.org (api key: a5049ba0777ebdbba26cfbab81a6559b)
 var requestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + userSearchInput + '&appid=a5049ba0777ebdbba26cfbab81a6559b&units=imperial';
@@ -38,11 +41,11 @@ return weatherResponse.json();
 var currentUV = weatherData.current.uvi;
 $(".currentUVIndex").append(weatherData.current.uvi)
 if(currentUV < 2) {
-$(".currentUVIndex").css("backgroundcolor", "green");
+$(".currentUVIndex").css("background_color", "green");
 } else if ( currentUV < 6) {
-$(".currentUVIndex").css("backgroundcolor", "yellow");
+$(".currentUVIndex").css("background_color", "yellow");
 } else {
-$(".currentUVIndex").css("backgroundcolor", "red");
+$(".currentUVIndex").css("background_color", "red");
 }
         
 
@@ -52,31 +55,31 @@ $(".currentUVIndex").css("backgroundcolor", "red");
 //https://openweathermap.org/weather-conditions
 //Five Day Forecast
 
-$(".img1").css("backgroundimg", "url(http://openweathermap.org/img/wn/" + weatherData.daily[0].weather[0].icon + "@2x.png");
+$(".img1").css("background_img", "url(http://openweathermap.org/img/wn/" + weatherData.daily[0].weather[0].icon + "@2x.png");
 $(".TemperatureA").append(weatherData.daily[0].temp.day)
 $(".WindA").append(weatherData.daily[0].wind_speed)
 $(".HumidityA").append(weatherData.daily[0].humidity)
 $(".UVA").append(weatherData.daily[0].uvi)
 
-$(".imgB").css("backgroundimg", "url(http://openweathermap.org/img/wn/" + weatherData.daily[1].weather[0].icon + "@2x.png");
+$(".imgB").css("background_img", "url(http://openweathermap.org/img/wn/" + weatherData.daily[1].weather[0].icon + "@2x.png");
 $(".TemperatureB").append(weatherData.daily[1].temp.day)
 $(".WindB").append(weatherData.daily[1].wind_speed)
 $(".HumidityB").append(weatherData.daily[1].humidity)
 $(".UVB").append(weatherData.daily[1].uvi)
 
-$(".imgC").css("backgroundimg", "url(http://openweathermap.org/img/wn/" + weatherData.daily[2].weather[0].icon + "@2x.png");
+$(".imgC").css("background_img", "url(http://openweathermap.org/img/wn/" + weatherData.daily[2].weather[0].icon + "@2x.png");
 $(".TemperatureC").append(weatherData.daily[2].temp.day)
 $(".WindC").append(weatherData.daily[2].wind_speed)
 $(".HumidityC").append(weatherData.daily[2].humidity)
 $(".UVC").append(weatherData.daily[2].uvi)
 
-$(".imgD").css("backgroundimg", "url(http://openweathermap.org/img/wn/" + weatherData.daily[3].weather[0].icon + "@2x.png");
+$(".imgD").css("background_img", "url(http://openweathermap.org/img/wn/" + weatherData.daily[3].weather[0].icon + "@2x.png");
 $(".TemperatureD").append(weatherData.daily[3].temp.day)
 $(".WindD").append(weatherData.daily[3].wind_speed)
 $(".HumidityD").append(weatherData.daily[3].humidity)
 $(".UVD").append(weatherData.daily[3].uvi)
 
-$(".imgE").css("backgroundimg", "url(http://openweathermap.org/img/wn/" + weatherData.daily[4].weather[0].icon + "@2x.png");
+$(".imgE").css("background_img", "url(http://openweathermap.org/img/wn/" + weatherData.daily[4].weather[0].icon + "@2x.png");
 $(".TemperatureE").append(weatherData.daily[4].temp.day)
 $(".WindE").append(weatherData.daily[4].wind_speed)
 $(".HumidityE").append(weatherData.daily[4].humidity)
@@ -97,10 +100,7 @@ console.log(weatherData.daily[0].wind_speed)
 //the current humidity for your city
 console.log(weatherData.daily[0].humidity)
 
-
-
 });
-
 
 });
 }
