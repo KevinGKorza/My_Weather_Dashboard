@@ -5,9 +5,6 @@ body {
     background-color: azure;
 }
 
-
-
-
 header {
     background: crimson;
     padding: 40;
@@ -32,7 +29,6 @@ aside{
     width: 40%;
     margin-right: 40px;
 }
-
 
 section{
     width: 70%;
@@ -77,8 +73,6 @@ section{
     padding: 20px;
 }
 
-
-
 .currentUV {
     padding: 10px 20px;
     border: 8px;
@@ -89,7 +83,6 @@ section{
    padding: 35px;
    height: 20px;
 }
-
 
 .green{
     background-color: lightgreen;
@@ -102,7 +95,6 @@ section{
 .red{
     background-color: red;
 }
-
 
 .backgroundimage {
    border-radius: 30;
