@@ -52,31 +52,31 @@ $(".currentUVIndex").css("backgroundcolor", "red");
 //https://openweathermap.org/weather-conditions
 //Five Day Forecast
 
-$(".imgA").css("background_image", "url(http://openweathermap.org/img/wn/10d" + weatherData.daily[0].weather[0].icon + "@2x.png");
+$(".img1").css("backgroundimg", "url(http://openweathermap.org/img/wn/" + weatherData.daily[0].weather[0].icon + "@2x.png");
 $(".TemperatureA").append(weatherData.daily[0].temp.day)
 $(".WindA").append(weatherData.daily[0].wind_speed)
 $(".HumidityA").append(weatherData.daily[0].humidity)
 $(".UVA").append(weatherData.daily[0].uvi)
 
-$(".imgB").css("background_image", "url(http://openweathermap.org/img/wn/10d" + weatherData.daily[0].weather[0].icon + "@2x.png");
+$(".imgB").css("backgroundimg", "url(http://openweathermap.org/img/wn/" + weatherData.daily[1].weather[0].icon + "@2x.png");
 $(".TemperatureB").append(weatherData.daily[1].temp.day)
 $(".WindB").append(weatherData.daily[1].wind_speed)
 $(".HumidityB").append(weatherData.daily[1].humidity)
 $(".UVB").append(weatherData.daily[1].uvi)
 
-$(".imgC").css("background_image", "url(http://openweathermap.org/img/wn/10d" + weatherData.daily[0].weather[0].icon + "@2x.png");
+$(".imgC").css("backgroundimg", "url(http://openweathermap.org/img/wn/" + weatherData.daily[2].weather[0].icon + "@2x.png");
 $(".TemperatureC").append(weatherData.daily[2].temp.day)
 $(".WindC").append(weatherData.daily[2].wind_speed)
 $(".HumidityC").append(weatherData.daily[2].humidity)
 $(".UVC").append(weatherData.daily[2].uvi)
 
-$(".imgD").css("background_image", "url(http://openweathermap.org/img/wn/10d" + weatherData.daily[0].weather[0].icon + "@2x.png");
+$(".imgD").css("backgroundimg", "url(http://openweathermap.org/img/wn/" + weatherData.daily[3].weather[0].icon + "@2x.png");
 $(".TemperatureD").append(weatherData.daily[3].temp.day)
 $(".WindD").append(weatherData.daily[3].wind_speed)
 $(".HumidityD").append(weatherData.daily[3].humidity)
 $(".UVD").append(weatherData.daily[3].uvi)
 
-$(".imgE").css("background_image", "url(http://openweathermap.org/img/wn/10d" + weatherData.daily[0].weather[0].icon + "@2x.png");
+$(".imgE").css("backgroundimg", "url(http://openweathermap.org/img/wn/" + weatherData.daily[4].weather[0].icon + "@2x.png");
 $(".TemperatureE").append(weatherData.daily[4].temp.day)
 $(".WindE").append(weatherData.daily[4].wind_speed)
 $(".HumidityE").append(weatherData.daily[4].humidity)
