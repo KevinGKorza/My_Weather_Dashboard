@@ -1,4 +1,7 @@
 This is the Weather Dashboard assignment (Module 6 Challenge)
+It is not finished yet, the current and future conditions of the users's city are present (5 Day Forecast), still working on the image generation part of the assignment, but this is what I have currently
+
+If you open the console, everything seems to be in order, I'm not getting any errors on my end and it does save to local storage but in the console itself 
 
 User Story: 
 -AS A traveler
@@ -24,3 +27,9 @@ Accepted Criteria:
 Website url:
 
 screen capture:
+
+
+
+
+
+
