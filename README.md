@@ -4,7 +4,9 @@
 
 -It is not finished yet, the current and future conditions of the users's city are present (5 Day Forecast), still working on the image generation part of the assignment and UV Alert, but this is what I have currently
 
-If you open the console, everything seems to be in order, I'm not getting any errors on my end and it does save to local storage but in the console itself 
+If you open the console, everything seems to be in order, I'm not getting any errors on my end and it does save to local storage but in the console itself
+
+
 
 
 
@@ -34,14 +36,14 @@ Accepted Criteria:
 -THEN I am again presented with current and future conditions for that city
 
 
-Website url:
 
 
 
+Website url: 
+https://kevingkorza.github.io/My_Weather_Dashboard/
 
 
-
-screen capture:
+Screen Capture:
 <img width="1656" alt="Screen Shot 2022-08-15 at 9 46 22 PM" src="https://user-images.githubusercontent.com/107637260/184781531-aa5af35f-6090-480a-bae9-82a311c45826.png">
 
 
