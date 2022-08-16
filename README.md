@@ -42,6 +42,7 @@ Website url:
 
 
 screen capture:
+<img width="1656" alt="Screen Shot 2022-08-15 at 9 46 22 PM" src="https://user-images.githubusercontent.com/107637260/184781531-aa5af35f-6090-480a-bae9-82a311c45826.png">
 
 
 
